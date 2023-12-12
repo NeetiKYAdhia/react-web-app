@@ -1,7 +1,7 @@
 const TodoItem = ({
   todo = {
     done: true,
-    title: 'Buy milk',
+    title: 'Buy coke',
     status: 'COMPLETED',
   },
 }) => {

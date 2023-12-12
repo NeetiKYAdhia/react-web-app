@@ -9,20 +9,20 @@ function Classes() {
         className={`${dangerous ? 'wd-bg-red' : 'wd-bg-green'}
                                      wd-fg-black wd-padding-10px`}
       >
-        Dangerous background
+        Background 1
       </div>
       <div className={`wd-bg-${color} wd-fg-black wd-padding-10px`}>
-        Dynamic Blue background
+        Background 2
       </div>
 
       <div className="wd-bg-yellow wd-fg-black wd-padding-10px">
-        Yellow background
+        Background 3
       </div>
       <div className="wd-bg-blue wd-fg-black wd-padding-10px">
-        Blue background
+        Background 4
       </div>
       <div className="wd-bg-red wd-fg-black wd-padding-10px">
-        Red background
+        Background 5
       </div>
     </div>
   );

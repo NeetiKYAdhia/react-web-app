@@ -1,7 +1,13 @@
 .nav {
-    background-color: red;
+    background-color: maroon;
 }
 
 .nav-link {
-    color: white;
+     color: white !important;
+     font-weight: bold !important;
+ }
+
+.nav-link:active {
+    color: navy;
+    font-weight: bold;
 }

@@ -1,8 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
-import './Nav.css';
+import './nav.css';
 
 function Nav() {
     const { pathname } = useLocation();
+    // const linkStyle = { color: 'white' };
     return (
         <nav className="nav nav-tabs mt-2">
             <Link
@@ -23,12 +24,7 @@ function Nav() {
             >
                 A5
             </Link>
-            <Link
-                to="/hello"
-                className={`nav-link ${pathname.includes('hello') ? 'active' : ''}`}
-            >
-                Hello
-            </Link>
+
             <Link
                 to="/Kanbas"
                 className={`nav-link ${pathname.includes('Kanbas') ? 'active' : ''}`}
