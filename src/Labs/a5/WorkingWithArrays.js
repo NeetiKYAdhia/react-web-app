@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import axios from 'axios';
 const API_BASE = process.env.REACT_APP_API_BASE;
-const URL = API_BASE?.substring(0, API_BASE.length) + '/a5';
+const URL = API_BASE?.substring(0, API_BASE.length) + 'a5';
 function WorkingWithArrays() {
   const API = `${URL}/todos`;
   const [id, setId] = useState(0);
