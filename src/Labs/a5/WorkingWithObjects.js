@@ -11,7 +11,7 @@ function WorkingWithObjects() {
     completed: false,
     score: 0,
   });
-  const URL = API_BASE?.substring(0, API_BASE.length) + '/a5/assignment';
+  const URL = API_BASE?.substring(0, API_BASE.length) + 'a5/assignment';
   const fetchAssignment = async () => {
     const response = await axios.get(`${URL}`);
     setAssignment(response.data);
