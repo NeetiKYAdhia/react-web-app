@@ -3,7 +3,7 @@ import WorkingWithArrays from './WorkingWithArrays';
 import WorkingWithObjects from './WorkingWithObjects';
 
 const API_BASE = process.env.REACT_APP_API_BASE;
-const URL = API_BASE?.substring(0, API_BASE.length) + 'a5';
+const URL = API_BASE?.substring(0, API_BASE.length) + '/a5';
 const Assignment5 = () => {
   return (
     <div className="container">
