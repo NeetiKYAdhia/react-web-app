@@ -1,6 +1,8 @@
 import axios from 'axios';
 
-const API_BASE = process.env.REACT_APP_API_BASE;
+const API_BASE = process.env.REACT_APP_API_BASE.endsWith('/')
+    ? process.env.REACT_APP_API_BASE.slice(0, -1)
+    : process.env.REACT_APP_API_BASE;
 const MODULES_URL = `${API_BASE}/modules`;
 const COURSES_URL = `${API_BASE}/courses`;
 
@@ -16,8 +18,8 @@ export const findModulesForCourse = async (courseId) => {
 
 export const createModule = async (courseId, module) => {
   const response = await axios.post(
-    `${COURSES_URL}/${courseId}/modules`,
-    module
+      `${COURSES_URL}/${courseId}/modules`,
+      module
   );
   return response.data;
 };
